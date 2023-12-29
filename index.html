@@ -9,8 +9,8 @@
     <title>Document</title>
 </head>
 <body>
-<div class="h-screen flex items-center justify-center">
-    <div class="w-1/2 text-center">
+<div class="h-screen flex justify-center">
+    <div class="w-1/2 text-center my-10">
         <div class="font-bold underline pb-3">
             <h5>This is My Triangle Calculator</h5>
         </div>
@@ -23,32 +23,120 @@
                        placeholder="calc here" name="" id="">
             </div>
         </div>
-        <div class="flex flex-row my-1 ">
+        <div class="flex flex-row my-1 gap-2 ">
             <div class="basis-1/2 border-2 rounded-lg border-blue-600 px-2 py-2 ">
                 <div class="flex flex-col">
                     <div class="flex justify-center">
-                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzlUfkLhMR1lJrANIU1Q4HIsoou3L8RP4Au6qvyGZxuX6JdT4EDlQsiBl8om36xlL8nA&usqp=CAU" alt="">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzlUfkLhMR1lJrANIU1Q4HIsoou3L8RP4Au6qvyGZxuX6JdT4EDlQsiBl8om36xlL8nA&usqp=CAU"
+                             alt="">
                     </div>
                     <div class="text-left">
                         <h5 class="font-bold mt-2">Rumus Luas Segitigas yaitu:</h5>
                         <h5 class="text-center px-2 py-1 text-white bg-blue-600 rounded-lg">L = 1/2 x a x t</h5>
-                        <h5>Dimana :</h5>
-                        <h5>L : Luas</h5>
-                        <h5>a : Panjang Alas</h5>
-                        <h5>t : Tinggi</h5>
-                    </div>
-                    <div class="border-2 shadow mx-2 pd-3 py-2 rounded-lg">
-                        <div class="px-2 py-1 border-b-2 border-black mx-4">Hitung Luas Segitiga</div>
-                        <div class="flex flex-col gap-2 mx-4 my-2">
-                            <input type="text" class="border border-gray-400 shadiw rounded-lg text-center" placeholder="Nilai Panjang Alas (a)">
-                            <input type="text" class="border border-gray-400 shadiw rounded-lg text-center" placeholder="Nilai Tinggi (t)">
+                        <div class="text">
+                            <h5>Dimana :</h5>
+                            <table>
+                                <tr>
+                                    <td>L</td>
+                                    <td> =</td>
+                                    <td>Luas</td>
+                                </tr>
+                                <tr>
+                                    <td>a</td>
+                                    <td> =</td>
+                                    <td>Panjang Alas</td>
+                                </tr>
+                                <tr>
+                                    <td>t</td>
+                                    <td> =</td>
+                                    <td>Tinggi</td>
+                                </tr>
+                            </table>
                         </div>
                     </div>
+                    <div class="border-2 shadow mx-2 pd-3 py-2 rounded-lg my-12">
+                        <div class="px-2 py-1 border-b-2 border-black mx-4">Hitung Luas Segitiga</div>
+                        <div class="flex flex-col gap-2 mx-4 my-2">
+                            <input id="a" type="text" class="border border-gray-400 shadow py-1 rounded-lg text-center"
+                                   placeholder="Nilai Panjang Alas (a)">
+                            <input id="t" type="text" class="border border-gray-400 shadow py-1 rounded-lg text-center"
+                                   placeholder="Nilai Tinggi (t)">
+                        </div>
+                        <button class="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-800">Hitung</button>
+                    </div>
+                    <div class="border-2 bg-gray-200 shadow mx-2 pd-3 py-2 rounded-lg mt-3">
+                        <div class="px-2 py-1 border-b-2 border-black mx-4">Perhitungan</div>
+                        <div class="flex flex-col gap-2 mx-4 my-2">
+                            <h5>L = 1/2 x a x t</h5>
+                            <h5>L = 1/2 x a x t</h5>
+                            <h5>L = value</h5>
+                        </div>
+                    </div>
+
                 </div>
             </div>
-            <div class="basis-1/2 border rounded-lg bg-blue-400 px-2 py-2">AC</div>
+            <div class="basis-1/2 border rounded-lg bg-blue-400 px-2 py-2">
+                <div class="flex flex-col">
+                    <div class="flex justify-center bg-white rounded-lg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzlUfkLhMR1lJrANIU1Q4HIsoou3L8RP4Au6qvyGZxuX6JdT4EDlQsiBl8om36xlL8nA&usqp=CAU"
+                             alt="">
+                    </div>
+                    <div class="text-left">
+                        <h5 class="font-bold mt-2 text-white">Rumus Keliling Segitiga yaitu:</h5>
+                        <h5 class="border-2 border-white text-center px-2 py-1 text-white bg-blue-600 rounded-lg">K = S1
+                            + S2 + S3</h5>
+                        <div class="text-white">
+                            <h5>Dimana :</h5>
+                            <table>
+                                <tr>
+                                    <td>K</td>
+                                    <td> =</td>
+                                    <td>Keliling</td>
+                                </tr>
+                                <tr>
+                                    <td>S1</td>
+                                    <td> =</td>
+                                    <td>Sisi 1</td>
+                                </tr>
+                                <tr>
+                                    <td>S2</td>
+                                    <td> =</td>
+                                    <td>Sisi 2</td>
+                                </tr>
+                                <tr>
+                                    <td>S3</td>
+                                    <td> =</td>
+                                    <td>Sisi 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="border-2 shadow mx-2 pd-3 py-2 rounded-lg my-4">
+                        <div class="px-2 py-1 border-b-2 border-black mx-4 text-white">Hitung Luas Segitiga</div>
+                        <div class="flex flex-col gap-2 mx-4 my-2">
+                            <input id="s1" type="text" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 1 (s1)">
+                            <input id="s2" type="text" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 2 (s2)">
+                            <input id="s3" type="text" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 3 (s3)">
+                        </div>
+                        <button class="bg-blue-600 text-white rounded-lg px-4 py-2 border-2 border-white hover:bg-blue-800">Hitung</button>
+                    </div>
+                    <div class="border-2 bg-gray-200 shadow mx-2 pd-3 py-2 rounded-lg">
+                        <div class="px-2 py-1 border-b-2 border-black mx-4">Perhitungan</div>
+                        <div class="flex flex-col gap-2 mx-4 my-2">
+                            <h5>K = S1 + S2 + S3</h5>
+                            <h5>K = S1 + S2 + S3</h5>
+                            <h5>K = value</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
         </div>
     </div>
 </div>
+<script>
+
+</script>
 </body>
 </html>
