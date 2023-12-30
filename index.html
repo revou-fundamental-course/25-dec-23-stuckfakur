@@ -80,8 +80,7 @@
                     </div>
                     <div class="text-left">
                         <h5 class="font-bold mt-2 text-white">Rumus Keliling Segitiga yaitu:</h5>
-                        <h5 class="border-2 border-white text-center px-2 py-1 text-white bg-blue-600 rounded-lg">K = S1
-                            + S2 + S3</h5>
+                        <h5 class="border-2 border-white text-center px-2 py-1 text-white bg-blue-600 rounded-lg">K = a + b + c</h5>
                         <div class="text-white">
                             <h5>Dimana :</h5>
                             <table>
@@ -91,17 +90,17 @@
                                     <td>Keliling</td>
                                 </tr>
                                 <tr>
-                                    <td>S1</td>
+                                    <td>a</td>
                                     <td> =</td>
                                     <td>Sisi 1</td>
                                 </tr>
                                 <tr>
-                                    <td>S2</td>
+                                    <td>b</td>
                                     <td> =</td>
                                     <td>Sisi 2</td>
                                 </tr>
                                 <tr>
-                                    <td>S3</td>
+                                    <td>c</td>
                                     <td> =</td>
                                     <td>Sisi 3</td>
                                 </tr>
@@ -112,9 +111,9 @@
                         <div class="px-2 py-1 border-b-2 border-black mx-4 text-white">Hitung Luas Segitiga</div>
                         <form action="">
                         <div class="flex flex-col gap-2 mx-4 my-2">
-                            <input id="s1" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 1 (s1)">
-                            <input id="s2" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 2 (s2)">
-                            <input id="s3" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 3 (s3)">
+                            <input id="s1" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 1 (a)">
+                            <input id="s2" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 2 (b)">
+                            <input id="s3" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 3 (c)">
                         </div>
                         <button onclick="kView()"  type="submit" class="bg-blue-600 text-white rounded-lg px-4 py-2 border-2 border-white hover:bg-blue-800">Hitung</button>
                         <button onclick="resetValue()" class="bg-orange-600 text-white rounded-lg px-4 py-2 hover:bg-orange-800 border-2 border-white">Reset</button>
@@ -123,7 +122,7 @@
                     <div id="kSummary"  class="border-2 bg-gray-200 shadow mx-2 pd-3 py-2 rounded-lg hidden">
                         <div class="px-2 py-1 border-b-2 border-black mx-4">Perhitungan</div>
                         <div class="flex flex-col gap-2 mx-4 my-2">
-                            <h5>K = S1 + S2 + S3</h5>
+                            <h5>K = a + b + c</h5>
                             <h5 id="kvaluesub"></h5>
                             <h5 id="kvalue"></h5>
                         </div>
