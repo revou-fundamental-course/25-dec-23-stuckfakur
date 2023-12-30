@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Triangle Calculation</title>
+</head>
+<body>
+<header class="fixed top-0 bg-blue-600 w-full h-8 px-4 text-white">
+    <div class="flex justify-between items-center">
+        <div>Logo</div>
+        <div>
+            <a href="index.html" class="underline">Index Tailwind</a>
+        </div>
+    </div>
+</header>
+<div class="h-screen flex justify-center">
+    <div class="w-1/2 text-center my-10">
+        <div class="font-bold underline pb-3">
+            <h5>This is My Triangle Calculator</h5>
+        </div>
+        <div class="italic">
+            <small>code by : benaleo bayu s.</small>
+        </div>
+        <div class="flex flex-row my-1 ">
+            <div class="w-full">
+            </div>
+        </div>
+        <div class="flex flex-row my-1 gap-2 ">
+            <div class="basis-1/2 border-2 rounded-lg border-blue-600 px-2 py-2 ">
+                <div class="flex flex-col">
+                    <div class="flex justify-center">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzlUfkLhMR1lJrANIU1Q4HIsoou3L8RP4Au6qvyGZxuX6JdT4EDlQsiBl8om36xlL8nA&usqp=CAU"
+                             alt="">
+                    </div>
+                    <div class="text-left">
+                        <h5 class="font-bold mt-2">Rumus Luas Segitigas yaitu:</h5>
+                        <h5 class="text-center px-2 py-1 text-white bg-blue-600 rounded-lg">L = 1/2 x a x t</h5>
+                        <div class="text">
+                            <h5>Dimana :</h5>
+                            <table>
+                                <tr>
+                                    <td>L</td>
+                                    <td> =</td>
+                                    <td>Luas</td>
+                                </tr>
+                                <tr>
+                                    <td>a</td>
+                                    <td> =</td>
+                                    <td>Panjang Alas</td>
+                                </tr>
+                                <tr>
+                                    <td>t</td>
+                                    <td> =</td>
+                                    <td>Tinggi</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="border-2 shadow mx-2 pd-3 py-2 rounded-lg my-12">
+                        <div class="px-2 py-1 border-b-2 border-black mx-4">Hitung Luas Segitiga</div>
+                        <div class="flex flex-col gap-2 mx-4 my-2">
+                            <input id="a" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Panjang Alas (a)">
+                            <input id="t" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Tinggi (t)">
+                        </div>
+                        <button onclick="lView()" type="submit" class="bg-blue-600 text-white rounded-lg px-4 py-2 hover:bg-blue-800">Hitung</button>
+                        <button onclick="resetValue()" class="bg-orange-600 text-white rounded-lg px-4 py-2 hover:bg-orange-800">Reset</button>
+                    </div>
+                    <div id="lSummary" class="border-2 bg-gray-200 shadow mx-2 pd-3 py-2 rounded-lg mt-3 hidden">
+                        <div class="px-2 py-1 border-b-2 border-black mx-4">Perhitungan</div>
+                        <div class="flex flex-col gap-2 mx-4 my-2">
+                            <h5>L = 1/2 x a x t</h5>
+                            <h5 id="lvaluesub"></h5>
+                            <h5 id="lvalue"></h5>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="basis-1/2 border rounded-lg bg-blue-400 px-2 py-2">
+                <div class="flex flex-col">
+                    <div class="flex justify-center bg-white rounded-lg">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzlUfkLhMR1lJrANIU1Q4HIsoou3L8RP4Au6qvyGZxuX6JdT4EDlQsiBl8om36xlL8nA&usqp=CAU"
+                             alt="">
+                    </div>
+                    <div class="text-left">
+                        <h5 class="font-bold mt-2 text-white">Rumus Keliling Segitiga yaitu:</h5>
+                        <h5 class="border-2 border-white text-center px-2 py-1 text-white bg-blue-600 rounded-lg">K = a + b + c</h5>
+                        <div class="text-white">
+                            <h5>Dimana :</h5>
+                            <table>
+                                <tr>
+                                    <td>K</td>
+                                    <td> =</td>
+                                    <td>Keliling</td>
+                                </tr>
+                                <tr>
+                                    <td>a</td>
+                                    <td> =</td>
+                                    <td>Sisi 1</td>
+                                </tr>
+                                <tr>
+                                    <td>b</td>
+                                    <td> =</td>
+                                    <td>Sisi 2</td>
+                                </tr>
+                                <tr>
+                                    <td>c</td>
+                                    <td> =</td>
+                                    <td>Sisi 3</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="border-2 shadow mx-2 pd-3 py-2 rounded-lg my-4">
+                        <div class="px-2 py-1 border-b-2 border-black mx-4 text-white">Hitung Luas Segitiga</div>
+                        <form action="">
+                        <div class="flex flex-col gap-2 mx-4 my-2">
+                            <input id="s1" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 1 (a)">
+                            <input id="s2" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 2 (b)">
+                            <input id="s3" type="number" class="border border-gray-400 shadow py-1 rounded-lg text-center" placeholder="Nilai Sisi 3 (c)">
+                        </div>
+                        <button onclick="kView()"  type="submit" class="bg-blue-600 text-white rounded-lg px-4 py-2 border-2 border-white hover:bg-blue-800">Hitung</button>
+                        <button onclick="resetValue()" class="bg-orange-600 text-white rounded-lg px-4 py-2 hover:bg-orange-800 border-2 border-white">Reset</button>
+                        </form>
+                    </div>
+                    <div id="kSummary"  class="border-2 bg-gray-200 shadow mx-2 pd-3 py-2 rounded-lg hidden">
+                        <div class="px-2 py-1 border-b-2 border-black mx-4">Perhitungan</div>
+                        <div class="flex flex-col gap-2 mx-4 my-2">
+                            <h5>K = a + b + c</h5>
+                            <h5 id="kvaluesub"></h5>
+                            <h5 id="kvalue"></h5>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const sa = document.getElementById('a');
+    const st = document.getElementById('t');
+    const s1 = document.getElementById('s1');
+    const s2 = document.getElementById('s2');
+    const s3 = document.getElementById('s3');
+
+    function lView(){
+        document.getElementById('lSummary').style.display = "block";
+        event.preventDefault();
+        const v1 = parseFloat(sa.value) || 0;
+        const v2 = parseFloat(st.value) || 0;
+        const calc = 1 / 2 * v1 * v2 ;
+        console.log(calc);
+        document.getElementById('lvaluesub').innerHTML = "L = 1/2 x " + v1 + " x " + v2;
+        document.getElementById('lvalue').innerHTML = "L = " + calc;
+    }
+    function kView(){
+        document.getElementById('kSummary').style.display = "block";
+        event.preventDefault();
+        const kel1 = parseFloat(s1.value) || 0;
+        const kel2 = parseFloat(s2.value) || 0;
+        const kel3 = parseFloat(s3.value) || 0;
+        const kelvalue = kel1 + kel2 + kel3;
+        console.log(kelvalue);
+        document.getElementById('kvaluesub').innerHTML = "K = " + kel1 + " + " + kel2 + " + " + kel3;
+        document.getElementById('kvalue').innerHTML = "K = " + kelvalue;
+    }
+    function resetValue(){
+        document.getElementById('lSummary').style.display = "none";
+        document.getElementById('kSummary').style.display = "none";
+    }
+
+
+</script>
+</body>
+</html>
