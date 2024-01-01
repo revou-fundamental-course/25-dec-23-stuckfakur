@@ -14,8 +14,17 @@ h5{
 .bg-blue-600{
     background-color: blue;
 }
+.hover-bg-blue-800:hover{
+    background-color: darkblue;
+}
+.bg-yellow-400{
+    background-color: yellow;
+}
 .bg-orange-600{
-    background-color: #EA580C;
+    background-color: orange;
+}
+.hover-bg-orange-800:hover{
+    background-color: darkorange;
 }
 .bg-white{
     background-color: white;
@@ -77,7 +86,7 @@ h5{
     margin: 10px 20px;
 }
 .basis-1{
-    width: 100%;
+    width: 50%;
     padding: 5px;
 }
 .border {
@@ -112,6 +121,7 @@ h5{
 
 body{
     margin: 0;
+    /*background-color: black;*/
 }
 header {
     position: fixed;
@@ -127,7 +137,7 @@ header {
     justify-items: center;
 }
 .content{
-    width: 50%;
+    width: 1000%;
     margin-top: 50px;
 
 }
