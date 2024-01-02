@@ -8,8 +8,20 @@ h5{
 .text-white{
     color: white;
 }
+.bold{
+    font-weight: bold;
+}
+.italic{
+    font-style: italic;
+}
 .bg-gray-200{
     background-color: #eaeaea;
+}
+.bg-red-600{
+    background-color: red;
+}
+.hover-bg-red-800:hover{
+    background-color: darkred;
 }
 .bg-blue-600{
     background-color: blue;
@@ -29,6 +41,9 @@ h5{
 .bg-white{
     background-color: white;
 }
+.m-auto{
+    margin: auto;
+}
 .my-1{
     margin-top: 0.25rem;
     margin-bottom: 0.25rem;
@@ -44,6 +59,9 @@ h5{
 .mx-4{
     margin-left: 1rem;
     margin-right: 1rem;
+}
+.mt-0{
+    margin-top: 0;
 }
 .mt-2{
     margin-top: 0.5rem;
@@ -113,15 +131,21 @@ h5{
 .h-12{
     height: 120px;
 }
+.w-full{
+    width: 100%;
+}
 .hidden {
     display: none;
 }
 
 /*html*/
-
+html{
+    height: 100%;
+}
 body{
     margin: 0;
-    /*background-color: black;*/
+    position: relative;
+    min-height: 100vh;
 }
 header {
     position: fixed;
@@ -130,14 +154,36 @@ header {
     background-color: blue;
     height: 2rem;
 }
+section{
+    position: absolute;
+    margin: auto;
+    width: 100%;
+}
+.kosong{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 450px;
+}
 .container{
     height: fit-content;
     display: flex;
     justify-content: center;
     justify-items: center;
+    padding-bottom: 15vh;
 }
 .content{
     width: 1000%;
-    margin-top: 50px;
-
+}
+.title-section{
+    background-color: black;
+    padding-top: 50px;
+    padding-bottom: 25px;
+}
+footer{
+    height: 15vh;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
