@@ -6,5 +6,5 @@ on default is use the Index.html</p>
     <div style="width: 100%">
         <img src="asset/profile.jpeg" style="width: 100px; border-radius: 100%;">
     </div>
-    <a src="https://www.linkedin.com/in/benaleo-bayu-3b576a240/">Beno Linkedin</a>
+    <a href="https://www.linkedin.com/in/benaleo-bayu-3b576a240/" target="_blank">My Linkedin</a>
 </div>
