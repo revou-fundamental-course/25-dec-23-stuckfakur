@@ -64,7 +64,6 @@ function hitungKeliling(){
     var nilai3 = "K = " + hitungan;
     document.getElementById('perhitungan').innerHTML = nilai1 +"<br>"+nilai2 +"<br>"+nilai3;
 }
-function reset(){
-    document.getElementById('lSummary').style.display = "none";
-    document.getElementById('kSummary').style.display = "none";
+function hitungReset(){
+    document.getElementById('lihatPerhitungan').style.display = "none";
 }
