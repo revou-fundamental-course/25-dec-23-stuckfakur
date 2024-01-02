@@ -147,7 +147,7 @@ body{
     position: relative;
     min-height: 100vh;
 }
-header {
+.navbar {
     position: fixed;
     top: 0;
     width: 100%;

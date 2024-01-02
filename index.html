@@ -9,7 +9,8 @@
     <title>Triangle Calculator</title>
 </head>
 <body>
-<header>
+<!-- navbar -->
+<div class="navbar">
     <div class="flex justify-between items-center">
         <div class="bold">
             <span class="text-white"><span>T</span>riCalc</span>
@@ -18,7 +19,9 @@
             <a href="index-tailwindCss.html" class="text-white">Index Tailwind</a>
         </div>
     </div>
-</header>
+</div>
+<!-- end navbar -->
+<!-- CONTENT -->
 <div class="container">
     <div class="content">
         <div class="title-section text-white">
@@ -26,6 +29,7 @@
                 <h3>This is My Triangle Calculator</h3>
                 <small class="italic">code by : benaleo bayu s.</small>
             </div>
+        <!-- pilihan hitungan -->
             <div class="w-full flex justify-center mt-2">
                     <button onclick="luasForm()" class="text-white bg-blue-600 hover-bg-blue-800 rounded-xs px-4 py-2">Luas</button>
                     <button onclick="kelilingForm()" class="text-white bg-blue-600 hover-bg-blue-800 rounded-xs px-4 py-2">Keliling</button>
@@ -33,11 +37,14 @@
             <div id="tutup" class="w-full text-center hidden">
                     <button onclick="hideForm()" class="text-white bg-red-600 hover-bg-red-800 rounded-xs px-4 py-2">Tutup</button>
             </div>
+        <!-- end pilihan hitungan -->
+
         </div>
         <div>
             <p id="choose" class="bold text-center py-2 bg-yellow-400 mt-0 hidden"></p>
         </div>
         <div class="flex flex-row justify-center gap-2">
+            <!-- Kondisi kosong -->
             <section id="kondisiKosong">
                 <div class="kosong">
                     <div class="flex flex-col">
@@ -48,7 +55,7 @@
                     </div>
                 </div>
             </section>
-
+            <!-- end Kondisi kosong -->
             <div id="Form" class="basis-1 hidden">
                 <div class="flex flex-col border rounded-lg bg-white">
                     <div class="flex justify-center">
@@ -66,6 +73,7 @@
                     </div>
                     <div class="border-2 shadow mx-2 px-2 py-2 rounded-lg my-12">
                         <div class="px-2 py-1 border-b-2 border-black mx-4">Hitung Luas Segitiga</div>
+                        <!-- form input luas dan keliling -->
                         <form action="">
                             <div id="inputLuas" class="flex flex-col mx-4 my-2 hidden">
                                 <input id="alas" type="number" class="w-full border-gray-400 shadow py-1 my-1 rounded-xs text-center" placeholder="Nilai Panjang Alas (a)">
@@ -76,12 +84,15 @@
                                 <input id="sisi2" type="number" class="w-full border-gray-400 shadow py-1 my-1 rounded-xs text-center" placeholder="Nilai Sisi 2 (b)">
                                 <input id="sisi3" type="number" class="w-full border-gray-400 shadow py-1 my-1 rounded-xs text-center" placeholder="Nilai Sisi 3 (c)">
                             </div>
+                            <!-- button hitungan-->
                             <div class="flex justify-center">
                                 <a id="hitungLuas" onclick="hitungLuas()" class="bg-blue-600 text-white rounded-lg px-4 py-2 hover-bg-blue-800">Hitung</a>
                                 <a id="hitungKeliling" onclick="hitungKeliling()" class="bg-blue-600 text-white rounded-lg px-4 py-2 hover-bg-blue-800">Hitung</a>
                                 <a onclick="reset()" type="reset" class="bg-orange-600 text-white rounded-lg px-4 py-2 hover-bg-orange-800">Reset</a>
                             </div>
+                            <!-- end button hitungan-->
                         </form>
+                        <!-- end form input luas dan keliling -->
                     </div>
                     <div id="lihatPerhitungan" class="border-2 bg-gray-200 shadow mx-2 px-2 py-2 rounded-lg mt-3 hidden">
                         <div class="px-2 py-1 border-b-2 border-black mx-4">Perhitungan</div>
@@ -95,6 +106,7 @@
         </div>
     </div>
 </div>
+<!--footers-->
 <footer>
     <div class="flex justify-between" style="padding: 3vh 15vh">
         <div class="flex flex-row items-center">
@@ -113,6 +125,7 @@
         </div>
     </div>
 </footer>
+<!--end footers-->
 <script src="js/index-join.js"></script>
 </body>
 </html>
