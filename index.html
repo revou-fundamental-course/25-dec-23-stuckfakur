@@ -34,9 +34,7 @@
                     <button onclick="luasForm()" class="text-white bg-blue-600 hover-bg-blue-800 px-4 py-2 rounded-xs mx-2" style="width: 150px">Luas</button>
                     <button onclick="kelilingForm()" class="text-white bg-blue-600 hover-bg-blue-800 rounded-xs px-4 py-2 mx-2" style="width: 150px">Keliling</button>
             </div>
-            <div id="tutup" class="w-full text-center hidden">
-                    <button onclick="hideForm()" class="text-white bg-red-600 hover-bg-red-800 rounded-xs px-4 py-2">Tutup</button>
-            </div>
+
         <!-- end pilihan hitungan -->
 
         </div>
@@ -59,6 +57,9 @@
             <div id="Form" class="basis-1 hidden">
                 <div class="flex flex-col border rounded-lg bg-white">
                     <div class="flex justify-center">
+                        <div id="tutup" class="hidden">
+                            <button onclick="hideForm()" class="text-white bg-red-600 hover-bg-red-800 rounded-xs px-4 py-2">Tutup</button>
+                        </div>
                         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTbzlUfkLhMR1lJrANIU1Q4HIsoou3L8RP4Au6qvyGZxuX6JdT4EDlQsiBl8om36xlL8nA&usqp=CAU" alt="">
                     </div>
                     <div class="text-left my-2">
@@ -108,7 +109,7 @@
 </div>
 <!--footers-->
 <footer>
-    <div class="flex justify-between" style="padding: 3vh 15vh">
+    <div class="footer-content flex justify-between" >
         <div class="flex flex-row items-center">
             <img src="asset/profile.jpeg" alt="hehe" class="m-auto" style="width: 50px; height: 50px; border-radius: 100%">
             <h3 class="text-white m-auto px-2">Benaleo Bayu S.</h3>

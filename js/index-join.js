@@ -49,9 +49,9 @@ function hitungLuas(){
     const v1 = parseFloat(sa.value) || 0;
     const v2 = parseFloat(st.value) || 0;
     const hitungan = 1 / 2 * v1 * v2 ;
-    var nilai1 = "L = 1/2 x a x t";
-    var nilai2 = "L = 1/2 x " + v1 + " x " + v2;
-    var nilai3 = "L = " + hitungan;
+    let nilai1 = "L = 1/2 x a x t";
+    let nilai2 = "L = 1/2 x " + v1 + " x " + v2;
+    let nilai3 = "L = " + hitungan;
     document.getElementById('perhitungan').innerHTML = nilai1 +"<br>"+nilai2 +"<br>"+nilai3;
 }
 function hitungKeliling(){
@@ -61,9 +61,9 @@ function hitungKeliling(){
     const kel2 = parseFloat(s2.value) || 0;
     const kel3 = parseFloat(s3.value) || 0;
     const hitungan = kel1 + kel2 + kel3;
-    var nilai1 = "K = a + b + c";
-    var nilai2 = "K = " + kel1 + " + " + kel2 + " + " + kel3;
-    var nilai3 = "K = " + hitungan;
+    let nilai1 = "K = a + b + c";
+    let nilai2 = "K = " + kel1 + " + " + kel2 + " + " + kel3;
+    let nilai3 = "K = " + hitungan;
     document.getElementById('perhitungan').innerHTML = nilai1 +"<br>"+nilai2 +"<br>"+nilai3;
 }
 function hitungReset(){
