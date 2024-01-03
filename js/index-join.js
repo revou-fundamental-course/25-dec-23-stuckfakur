@@ -12,6 +12,7 @@ function luasForm(){
     document.getElementById('formula').innerHTML = "L = 1/2 x a x t";
     document.getElementById('keterangan').innerHTML = "L = Luas <br>a = Panjang Alas <br>t = Tinggi";
     document.getElementById('inputLuas').style.display = "block";
+    document.getElementById('titleHitung').innerHTML = "Hitung Luas Segitiga";
     document.getElementById('inputKeliling').style.display = "none";
     document.getElementById('hitungLuas').style.display = "block";
     document.getElementById('hitungKeliling').style.display = "none";
@@ -27,6 +28,7 @@ function kelilingForm(){
     document.getElementById('formula').innerHTML = "K = a + b + c";
     document.getElementById('keterangan').innerHTML = "K = Keliling <br>a = Sisi 1 <br>b = Sisi 2<br>c = Sisi 3";
     document.getElementById('inputLuas').style.display = "none";
+    document.getElementById('titleHitung').innerHTML = "Hitung Keliling Segitiga";
     document.getElementById('inputKeliling').style.display = "block";
     document.getElementById('hitungLuas').style.display = "none";
     document.getElementById('hitungKeliling').style.display = "block";
